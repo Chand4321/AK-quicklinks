@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Email Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white p-8 rounded-lg shadow-xl w-full max-w-lg">
+        <a href="/index.html" class="flex items-center gap-3 pb-4"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+            </svg>
+
+            Home</a>
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Create Feedback Email</h1>
+        <div class="mb-4">
+            <label for="targetEmail" class="block text-gray-700 text-sm font-semibold mb-2">Author Email (<a
+                    href="https://docs.google.com/document/d/1XT2S7Vc1QYBu2neXASfc4t2Fs43YQuC-ebGR9_H0yW0/edit?usp=sharing"
+                    class="text-blue-700 italic">Author
+                    info</a>):</label>
+            <input type="email" id="targetEmail" placeholder="Enter recipient email"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+
+        <div class="mb-4">
+            <label for="articleStatus" class="block text-gray-700 text-sm font-semibold mb-2">Article Status:</label>
+            <select id="articleStatus"
+                class="shadow border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                <option value="">Select Status</option>
+                <option value="Approved">Approved</option>
+                <option value="Returned">Returned</option>
+            </select>
+        </div>
+
+        <div class="mb-4">
+            <label for="docLink" class="block text-gray-700 text-sm font-semibold">Article Doc (Give
+                access to Author):</label>
+            <p><a href="https://drive.google.com/drive/folders/1-KXUW3nPK1CbRGNa95i2HeNHCnQ5o90V?usp=drive_link"
+                    class="text-blue-700 italic text-sm mb-2">[Submited Articles Folder]</a></p>
+            <textarea id="docLink" rows="3" placeholder="Paste Article document link here..."
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline resize-y"></textarea>
+        </div>
+
+        <div class="mb-6">
+            <label for="feedbackNote" class="block text-gray-700 text-sm font-semibold mb-2">Feedback Note:</label>
+            <textarea id="feedbackNote" rows="8" placeholder="Enter your feedback here..."
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline resize-y"></textarea>
+        </div>
+
+        <button id="sendEmailBtn"
+            class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full transition duration-300 ease-in-out">
+            Open in Gmail
+        </button>
+
+        <p class="text-gray-600 text-xs mt-4 text-center">
+            This will open a new draft email in your default email client (preferably Gmail).
+            Please ensure you are logged into Gmail in your browser.
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
