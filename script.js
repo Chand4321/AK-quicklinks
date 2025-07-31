@@ -21,7 +21,7 @@ Feedback:
 
 ---
 
-Contact us for any queries alkitab.space@gmail.com. Thank you for your time and consideration.
+Contact us for any queries editorial@alkitab.space. Thank you for your time and consideration.
 
 Sincerely,
 Editorial team.
